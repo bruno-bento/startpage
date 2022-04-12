@@ -2,7 +2,7 @@ import './ContentLinks.css';
 
 const ContentLinks = () => {
     return (
-        <div className="card-content-links">
+        <div className="card card-content-links">
 
         </div>
     );

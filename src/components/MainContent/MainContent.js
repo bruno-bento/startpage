@@ -1,6 +1,6 @@
 import "./MainContent.css";
 import SearchBar from "../SearchBar/SearchBar";
-import ContentLinks from "../ContentLinks/ContentLinks";
+import ContentLinks from "../Cards/CardMain/ContentLinks";
 
 const MainContent = () => {
   return (

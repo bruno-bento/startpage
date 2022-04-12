@@ -10,11 +10,8 @@ input {
 }
 
 .divSearchBar{
-    background: #1e293b;
-    border-radius: 10px;
-    padding-left: 10px;
-    margin-bottom: 19px;
-    filter: drop-shadow(8px 8px 0px rgba(49, 68, 98, 0.25));
+  padding-left: 10px;
+  margin-bottom: 19px;
 }
 
 input:focus {

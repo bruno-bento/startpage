@@ -1,7 +1,7 @@
 import "./App.css";
-import CardImage from "./components/CardImage/CardImage";
+import CardImage from "./components/Cards/CardImage/CardImage";
 import MainContent from "./components/MainContent/MainContent";
-import AdditionalCards from "./components/AdditionalCards/AddtionalCards";
+import DataWeather from "./components/DataWeather/DataWeather";
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ function App() {
       <div className="cards">
         <CardImage/>
         <MainContent/>
-        <AdditionalCards/>
+        <DataWeather/>
       </div>
     </div>
   );
