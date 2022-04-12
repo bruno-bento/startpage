@@ -4,7 +4,7 @@ import './DataWeather.css';
 
 const DataWeather = () => {
     return(
-        <div>
+        <div className="data-weather">
             <CardDate/>
             <CardWeather/>
         </div>

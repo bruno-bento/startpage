@@ -1,17 +1,15 @@
 
 input {
   padding: 0px 10px;
-  width: 521px;
+  width: 487px;
   height: 54px;
   background: #1e293b;
   border-radius: 10px;
-
   border: none;
 }
 
 .divSearchBar{
   padding-left: 10px;
-  margin-bottom: 19px;
 }
 
 input:focus {
