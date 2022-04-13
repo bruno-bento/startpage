@@ -1,6 +1,6 @@
 .card-date {
-  width: 278px;
-  height: 223px;
+  width: 27.8rem;
+  height: 22.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,8 +11,8 @@
 h1{
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 79px;
+  font-size: 6.4rem;
+  line-height: 7.9rem;
   
   color: #38BDF8;
 }
@@ -20,8 +20,8 @@ h1{
 p{
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   
   color: #FFFFFF;
 }

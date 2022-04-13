@@ -10,6 +10,10 @@ html, body{
     height: 100%;
 }
 
+html{
+    font-size:  62.5%;
+}
+
 body{
     background-color: #0E162D;
     display: flex;
@@ -18,18 +22,34 @@ body{
 }
 
 .cards{
-    width: 1200px;
+    max-width: 120rem;
    /* height: 520px;*/
     display: grid;
-    grid-template-columns: 315px 1fr 282px;
-    gap: 24px;
-    flex-wrap: wrap;
+    grid-template-columns: 31.5rem 1fr 28.2rem;
+    gap: 2.4rem;
+}
+
+@media screen and (max-width: 1200px){
+    .cards{
+        grid-template-columns: 31.5rem 1fr;
+    }
+}
+ 
+@media screen and (max-width: 930px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .App{
+        margin-top: 40rem;
+    }
+
 }
 
 .card{
     background: #1E293B;
-    border-radius: 10px;
-    filter: drop-shadow(8px 8px 0px rgba(49, 68, 98, 0.25));
+    border-radius: 1rem;
+    filter: drop-shadow(0.8rem 0.8rem 0rem rgba(49, 68, 98, 0.25));
 }
 
 h1{
