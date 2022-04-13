@@ -6,8 +6,11 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-html, body{
+html{
     height: 100%;
+}
+body{
+    min-height: 100%;
 }
 
 html{
@@ -37,13 +40,21 @@ body{
  
 @media screen and (max-width: 930px){
     .cards{
-        grid-template-columns: 1fr;
+        max-width: 29rem;
+        grid-template-columns: 29rem;
     }
 
-    .App{
-        margin-top: 40rem;
+    .App-header{
+        justify-content: center;
+        display: flex;
     }
 
+    .App-header h1{
+        font-size: 4.4rem;
+    }
+    body{
+        padding-bottom: 5rem;
+    }
 }
 
 .card{
@@ -54,4 +65,5 @@ body{
 
 h1{
     color: #38BDF8;
+    font-size: 4.4rem;
 }

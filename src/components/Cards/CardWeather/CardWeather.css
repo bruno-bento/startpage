@@ -2,3 +2,9 @@
     width: 27.8rem;
     height: 22.3rem;
 }
+@media screen and (max-width: 930px){
+    .card-weather {
+      width: 29rem;
+    }
+    
+  }

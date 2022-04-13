@@ -16,3 +16,10 @@ input {
 input:focus {
   outline: none;
 }
+
+@media screen and (max-width: 930px){
+  input {
+    width: 28.0rem;
+    height: 5.4rem;
+  }
+}

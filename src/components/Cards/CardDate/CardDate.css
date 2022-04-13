@@ -25,3 +25,10 @@ p{
   
   color: #FFFFFF;
 }
+
+@media screen and (max-width: 930px){
+  .card-date {
+    width: 29rem;
+  }
+  
+}
