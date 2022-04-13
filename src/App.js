@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import CardImage from "./components/Cards/CardImage/CardImage";
 import MainContent from "./components/MainContent/MainContent";
 import DataWeather from "./components/DataWeather/DataWeather";
