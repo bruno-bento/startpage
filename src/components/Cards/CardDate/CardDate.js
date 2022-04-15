@@ -1,9 +1,9 @@
 import './CardDate.css';
 import {useState, useEffect} from 'react';
 const CardDate = () => {
-    const [day, setDay] = useState(0);
-    const [month, setMounth] = useState(0);
-    const [dayOfWeek, setDayOfWeek] = useState(0);
+    const [day, setDay] = useState('');
+    const [month, setMounth] = useState('');
+    const [dayOfWeek, setDayOfWeek] = useState('');
 
     useEffect(() => {
         const interval = setInterval(() =>{ 
