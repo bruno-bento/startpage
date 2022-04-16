@@ -26,6 +26,10 @@ p{
   color: #FFFFFF;
 }
 
+.card-date-seconds{
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 930px){
   .card-date {
     width: 29rem;
