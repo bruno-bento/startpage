@@ -12,14 +12,14 @@ const SearchBar = (props) => {
   const handleClick = () => {
     if(content.length <= 0) return;
     
-    if(content.split("/")[0] === "g"){
+    if(content.split("/")[0].toUpperCase() === "G"){
       window.open(
         `https://www.google.com/search?q=${content.split("/")[1]}`,
         "_blank"
       );
     }
-    
-    else if(content.split("/")[0] === "dg"){
+
+    else if(content.split("/")[0].toUpperCase() === "DG"){
       window.open(
         `https://duckduckgo.com/?q=${content.split("/")[1]}`,
         "_blank"
