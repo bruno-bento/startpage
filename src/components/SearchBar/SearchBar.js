@@ -14,13 +14,14 @@ const SearchBar = (props) => {
     
     if(content.split("/")[0] === "g"){
       window.open(
-        `https://www.google.com/search?q=${content}`,
+        `https://www.google.com/search?q=${content.split("/")[1]}`,
         "_blank"
       );
     }
+    
     else if(content.split("/")[0] === "dg"){
       window.open(
-        `https://duckduckgo.com/?q=${content}`,
+        `https://duckduckgo.com/?q=${content.split("/")[1]}`,
         "_blank"
       );
     }
