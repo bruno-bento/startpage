@@ -6,6 +6,12 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
+.App{
+    zoom: 80%; 
+    -moz-transform: scale(80%); 
+    -moz-transform-origin: 1 0;
+}
+
 html{
     height: 100%;
 }
