@@ -39,7 +39,7 @@ const SearchBar = (props) => {
       <button className="btn-search-bar" onClick={handleClick}>
         <HiSearch color="#38BDF8"/>
       </button>
-      <input className="input-search-bar" type="text" placeholder="g/you-search-here" value={content} onChange={handleChange} onKeyDown={handleKeyDown}/>
+      <input autoFocus className="input-search-bar" type="text" placeholder="g/you-search-here" value={content} onChange={handleChange} onKeyDown={handleKeyDown}/>
     </div>
   );
 };

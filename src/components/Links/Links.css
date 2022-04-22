@@ -21,6 +21,18 @@ a:visited {
   color: #ffffff;
 }
 
+a:focus{
+  background-color: #38bdf8;
+  border-radius: 1rem;
+  border-color: #0E162D;
+  color: #0E162D;
+}
+a:focus::before{
+  content:"->";
+  color: #0E162D;
+  font-family: 'Fira Code', monospace;
+}
+
 ul {
   list-style: none;
   padding: 0;

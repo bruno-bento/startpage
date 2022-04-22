@@ -11,25 +11,21 @@ const CardWeather = () => {
     navigator.geolocation.getCurrentPosition(
       function (position) {
         const { latitude, longitude } = position.coords;
-        WeatherApi.get(latitude + "," + longitude + "?format=j1").then(
-          (response) => {
-            setClimate(response.data.current_condition[0].temp_C + "°C");
-            setClimateStatus(
-              response.data.current_condition[0].lang_pt[0].value
-            );
-            setCity(response.data.nearest_area[0].areaName[0].value);
-          }
-        );
+        getWeather(latitude + "," + longitude);
       },
       function (error) {
-        WeatherApi.get("Sao-Paulo?format=j1").then((response) => {
-          setClimate(response.data.current_condition[0].temp_C + "°C");
-          setClimateStatus(response.data.current_condition[0].lang_pt[0].value);
-          setCity(response.data.nearest_area[0].areaName[0].value);
-        });
+        getWeather("Sao-Paulo");
       }
     );
   }, []);
+
+  function getWeather(region){
+    WeatherApi.get(`${region}?format=j1`).then((response) => {
+      setClimate(response.data.current_condition[0].temp_C + "°C");
+      setClimateStatus(response.data.current_condition[0].lang_pt[0].value);
+      setCity(response.data.nearest_area[0].areaName[0].value);
+    });
+  }
 
   return (
     <div className="card card-weather">
