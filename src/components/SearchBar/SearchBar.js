@@ -1,5 +1,5 @@
 import "./SearchBar.css";
-import { HiSearch } from "react-icons/hi";
+import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
 const SearchBar = (props) => {
@@ -37,7 +37,7 @@ const SearchBar = (props) => {
   return (
     <div className="card div-search-bar">
       <button className="btn-search-bar" onClick={handleClick}>
-        <HiSearch color="#38BDF8"/>
+        <FaSearch className="icons"/>
       </button>
       <input autoFocus className="input-search-bar" type="text" placeholder="g/you-search-here" value={content} onChange={handleChange} onKeyDown={handleKeyDown}/>
     </div>

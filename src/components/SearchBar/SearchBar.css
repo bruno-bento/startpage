@@ -5,11 +5,10 @@
 }
 
 .div-search-bar button {
-  border: none;
+  background-color: #1e293b;
 }
 
 button {
-  background-color: #1e293b;
   border: none;
   cursor: pointer;
   color: #fff;

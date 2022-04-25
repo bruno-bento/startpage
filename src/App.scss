@@ -7,15 +7,10 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.App{
-    zoom: 80%; 
-    -moz-transform: scale(80%); 
-    -moz-transform-origin: 1 0;
-}
-
 html{
     height: 100%;
 }
+
 body{
     min-height: 100%;
 }
@@ -27,13 +22,19 @@ html{
 body{
     background-color: #0E162D;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .App-header{
     word-break: break-all;
-
 }
 
 .cards{
@@ -80,4 +81,10 @@ h1{
     font-size: 4.4rem;
 }
 
+.icons{
+    color: #38BDF8;
+}
 
+.btn{
+    background-color: #0E162D;
+}
