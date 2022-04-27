@@ -15,16 +15,14 @@ const SearchBar = (props) => {
     
     if(content.split("/")[0].toUpperCase() === "DG"){
       window.open(
-        `https://duckduckgo.com/?q=${content.split("/")[1]}`,
-        "_blank"
+        `https://duckduckgo.com/?q=${content.split("/")[1]}`, "_parent"
         );
     }
 
     else{
       window.open(
-        `https://www.google.com/search?q=${content}`,
-        "_blank"
-      );
+        `https://www.google.com/search?q=${content}`, "_parent"
+        );
     }
     setContent("");
   };
