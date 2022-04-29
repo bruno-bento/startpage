@@ -2,15 +2,11 @@ import "./App.scss";
 import CardImage from "./components/Cards/CardImage/CardImage";
 import MainContent from "./components/MainContent/MainContent";
 import DataWeather from "./components/DataWeather/DataWeather";
-import { FaCog } from "react-icons/fa";
+import ConfigMenu from "./components/ConfigMenu/ConfigMenu";
 function App() {
   return (
     <div>
-      <nav>
-        <button className="btn">
-          <FaCog className="icons" />
-        </button>
-      </nav>
+      <ConfigMenu />
 
       <div className="App">
         <div>
