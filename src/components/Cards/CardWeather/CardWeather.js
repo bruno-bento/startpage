@@ -1,4 +1,4 @@
-import "./CardWeather.css";
+import style from "./CardWeather.module.scss";
 import WeatherApi from "../../../service/WeatherApi";
 import { useState, useEffect } from "react";
 
@@ -28,7 +28,7 @@ const CardWeather = () => {
   }
 
   return (
-    <div className="card card-weather">
+    <div className={`card ${style.cardWeather}`}>
       <h1>{climate}</h1>
       <p>{climateStatus}</p>
       <p>{city}</p>

@@ -1,18 +1,18 @@
-import "./Links.css";
+import style from "./Links.module.scss";
 
 const Links = (props) => {
   console.log(props.link);
 
 
   return (
-    <div className="card-links">
-      <div className="card-header">
+    <div>
+      <div className={style.cardHeader}>
         <h3>{props.title}</h3>
       </div>
-      <div className="card-body">
-        <ul className="list-group">
+      <div >
+        <ul>
         {props.link.map(link => (
-          <a key={link.title} href={link.url} alt={link.title} className="list-group-item">{link.title}</a>
+          <a key={link.title} href={link.url} alt={link.title} >{link.title}</a>
         ))}
         </ul>
       </div>
@@ -21,7 +21,3 @@ const Links = (props) => {
 };
 
 export default Links;
-/*
-        {props.link.map(link => (
-          <a href={link.url} alt={link.title} className="list-group-item">))}
-*/ 

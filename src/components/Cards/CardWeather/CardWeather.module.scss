@@ -1,4 +1,4 @@
-.card-date, .card-weather {
+.cardWeather {
   width: 27.8rem;
   height: 22.3rem;
   display: flex;
@@ -8,11 +8,7 @@
   gap: 1.5rem;
 }
 
-.card-date--hours{
-  display: inline-flex;
-}
-
-h1{
+.cardWeather h1{
   font-style: normal;
   font-weight: 700;
   font-size: 5.4rem;
@@ -21,7 +17,7 @@ h1{
   color: #38BDF8;
 }
 
-p{
+.cardWeather p{
   font-style: normal;
   font-weight: 500;
   font-size: 2rem;
@@ -30,13 +26,9 @@ p{
   color: #FFFFFF;
 }
 
-.card-date-seconds{
-  font-size: 1rem;
-}
-
 @media screen and (max-width: 930px){
-  .card-date {
-    width: 29rem;
-  }
-  
+    .cardWeather {
+      width: 29rem;
+    }
+    
 }

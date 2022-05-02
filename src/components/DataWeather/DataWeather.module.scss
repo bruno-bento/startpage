@@ -1,4 +1,4 @@
-.data-weather{
+.dataWeather{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -7,7 +7,7 @@
 
 
 @media screen and (max-width: 1200px){
-    .data-weather{
+    .dataWeather{
         grid-column: span 2; 
         flex-direction: row;
         justify-content: right;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 930px){
-    .data-weather{
+    .dataWeather{
         grid-column: span 1;
         flex-direction: column;
     }

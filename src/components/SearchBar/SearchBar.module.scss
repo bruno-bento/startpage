@@ -1,10 +1,14 @@
-.div-search-bar {
+.search{
   padding-left: 1rem;
   display: flex;
   gap: 1rem;
 }
 
-.div-search-bar button {
+.icons{
+  color: #38BDF8;
+}
+
+.searchbutton {
   background-color: #1e293b;
 }
 
@@ -15,7 +19,7 @@ button {
 }
 :focus{outline: none;}
 
-.input-search-bar{
+.inputSearch{
   width: 48.7rem;
   height: 5.4rem;
   background: #1e293b;
@@ -27,7 +31,7 @@ button {
 
 
 @media screen and (max-width: 930px) {
-  .input-search-bar {
+  .inputSearch {
     width: 28rem;
     height: 5.4rem;
   }

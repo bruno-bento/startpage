@@ -1,0 +1,34 @@
+.cardDate {
+  width: 27.8rem;
+  height: 22.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cardDate h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.4rem;
+  line-height: 7.9rem;
+  
+  color: #38BDF8;
+}
+
+.cardDate p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 930px){
+  .cardDate {
+    width: 29rem;
+  }
+  
+}

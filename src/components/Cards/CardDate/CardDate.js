@@ -1,4 +1,4 @@
-import './CardDate.css';
+import style from './CardDate.module.scss';
 import {useState, useEffect} from 'react';
 const CardDate = () => {
     const [hours, setHours] = useState('');
@@ -18,7 +18,7 @@ const CardDate = () => {
     
 
     return (
-        <div className="card card-date">
+        <div className={`card ${style.cardDate}`}>
             <h1>{hours}</h1>    
             <p>{month}</p>
             <p>{dayOfWeek}</p>

@@ -1,10 +1,10 @@
 import CardDate from '../Cards/CardDate/CardDate';
 import CardWeather from '../Cards/CardWeather/CardWeather';
-import './DataWeather.css';
+import style from './DataWeather.module.scss';
 
 const DataWeather = () => {
     return(
-        <div className="data-weather">
+        <div className={style.dataWeather}>
             <CardDate/>
             <CardWeather/>
         </div>

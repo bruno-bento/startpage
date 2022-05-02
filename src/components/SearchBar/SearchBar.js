@@ -1,4 +1,4 @@
-import "./SearchBar.css";
+import style from "./SearchBar.module.scss";
 import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 
@@ -34,11 +34,11 @@ const SearchBar = (props) => {
   };
 
   return (
-    <div className="card div-search-bar">
-      <button className="btn-search-bar" onClick={handleClick}>
-        <FaSearch className="icons"/>
+    <div className={`card ${style.search}`}>
+      <button className={style.searchbutton} onClick={handleClick}>
+        <FaSearch className={style.icons}/>
       </button>
-      <input autoFocus className="input-search-bar" type="text" placeholder="g/you-search-here" value={content} onChange={handleChange} onKeyDown={handleKeyDown}/>
+      <input autoFocus className={style.inputSearch} type="text" placeholder="g/you-search-here" value={content} onChange={handleChange} onKeyDown={handleKeyDown}/>
     </div>
   );
 };
