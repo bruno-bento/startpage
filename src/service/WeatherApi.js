@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://wttr.in/",
+  baseURL: "https://wttr.in/",
 });
 
 export default api;
