@@ -1,6 +1,6 @@
 import style from "./Modal.module.scss";
 import ReactModal from "react-modal";
-
+import {FaTimesCircle} from "react-icons/fa";
 const Modal = (props) => {
     function afterOpenModal() {
       // references are now sync'd and can be accessed.
@@ -14,15 +14,13 @@ const Modal = (props) => {
       contentLabel="Example Modal"
       onRequestClose={props.toggleModal}
     >
-      <button onClick={props.toggleModal}>close</button>
-      <div>I am a modal</div>
-      <form>
-        <input />
-        <button>tab navigation</button>
-        <button>stays</button>
-        <button>inside</button>
-        <button>the modal</button>
-      </form>
+      <div>
+
+      </div>
+      <button onClick={props.toggleModal}>
+        <FaTimesCircle className={style.icons} />
+      </button>
+
     </ReactModal>
   );
 };
