@@ -5,11 +5,10 @@ import DataWeather from "./components/DataWeather/DataWeather";
 import ConfigMenu from "./components/ConfigMenu/ConfigMenu";
 function App() {
   return (
-    <div>
+    <div className="main-div">
       <ConfigMenu />
 
       <div className="App">
-        <div>
           <header className="App-header">
             <h1>Olá, Bruno</h1>
           </header>
@@ -18,7 +17,6 @@ function App() {
             <MainContent />
             <DataWeather />
           </div>
-        </div>
       </div>
     </div>
   );

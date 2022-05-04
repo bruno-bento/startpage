@@ -1,15 +1,70 @@
 .modal {
+    position: absolute;
     top: 50%;
     left: 50%;
-    right: auto;
-    bottom: auto;
-    margin-right: -50%;
     transform: translate(-50%, -50%);
-    width: 25%;
-    height: 25%;
+    width: 80rem;
+    height: 50rem;
+    background-color: #0E162D;
+    border-radius: 1rem;
+    filter: drop-shadow(0.8rem 0.8rem 0rem rgba(49, 68, 98, 0.25));
+
 }
 
 .icons{
     color: #38BDF8;
 }
-  
+
+.icons:hover{
+    color: #ff0000;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.modalMenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgba(49, 68, 98, 0.25);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}  
+
+
+.modalMenu a:link,
+.modalMenu a:visited {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  color: #38BDF8;
+}
+
+.modalMenu a:focus, 
+.modalMenu a:hover {
+
+  color: #FFF;
+}
+
+.modalMenu div{
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+.btnModal{
+    background-color: transparent;
+}
+
+.modalContent{
+    padding-left: 2rem;
+}
