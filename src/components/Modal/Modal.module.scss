@@ -8,7 +8,7 @@
     background-color: #0E162D;
     border-radius: 1rem;
     filter: drop-shadow(0.8rem 0.8rem 0rem rgba(49, 68, 98, 0.25));
-
+    overflow: auto;
 }
 
 .icons{
@@ -67,4 +67,11 @@
 
 .modalContent{
     padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.modalContentLinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem
 }
